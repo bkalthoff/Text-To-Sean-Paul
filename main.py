@@ -26,7 +26,7 @@ def encrypt(message):
     return cipher 
 
 def main(): 
-    message = "Bastian"
+    message = "This is an example"
     result = encrypt(message.upper()) 
     myobj = gTTS(text=result, lang="en", slow=False) 
     myobj.save(message + ".mp3") 
